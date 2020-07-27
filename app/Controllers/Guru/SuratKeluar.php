@@ -28,7 +28,7 @@ class SuratKeluar extends GuruBaseController
                 $service = new Google_Service_Drive($client);
                 if ($this->request->getPost('pakai_file') == 1) {
                     $file = new Google_Service_Drive_DriveFile(array(
-                        'name' => 'SK-' . $this->request->getPost('no_surat'),
+                        'name' =>  date("Y") . '-SK-' . $this->request->getPost('no_surat'),
                         'parents' => array('1-CDb1lezrArdekM7WGpzovxD2__t1Cdg') // this is the folder id
                     ));
                     $result = $service->files->create(
@@ -116,7 +116,7 @@ class SuratKeluar extends GuruBaseController
                 $service = new Google_Service_Drive($client);
                 if ($this->request->getPost('pakai_file') == 1) {
                     $file = new Google_Service_Drive_DriveFile(array(
-                        'name' => 'SK-' . $this->request->getPost('no_surat'),
+                        'name' =>  date("Y") . '-SK-' . $this->request->getPost('no_surat'),
                         'parents' => array('1-CDb1lezrArdekM7WGpzovxD2__t1Cdg') // this is the folder id
                     ));
                     $result = $service->files->create(

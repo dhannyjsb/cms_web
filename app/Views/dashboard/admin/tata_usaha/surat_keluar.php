@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="btn-group float-right mt-2" role="group">
-                                        <a class="btn btn-md btn-secondary" data-toggle="modal" data-target="#addModal">
+                                        <a style="color:white" class="btn bg-gradient-primary mr-1 mb-1 waves-effect waves-light" data-toggle="modal" data-target="#addModal">
                                             <i class="fa fa-plus" aria-hidden="true"></i> Tambah</a>
                                     </div>
                                 </div>
@@ -155,8 +155,8 @@
                 </fieldset>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="tombol_batal">Tutup</button>
-                <button type="submit" class="btn btn-primary" id="tombol_tambah">Tambah</button>
+                <button type="button" class="btn bg-gradient-warning mr-1 mb-1 waves-effect waves-light" data-dismiss="modal" id="tombol_batal">Tutup</button>
+                <button type="submit" class="btn bg-gradient-success mr-1 mb-1 waves-effect waves-light" id="tombol_tambah">Tambah</button>
             </div>
         </div>
     </div>
@@ -176,8 +176,8 @@
             <div class="modal-body load_modal_view">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="button" class="btn bg-gradient-warning mr-1 mb-1 waves-effect waves-light" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn bg-gradient-success mr-1 mb-1 waves-effect waves-light">Simpan</button>
             </div>
             <?= form_close(); ?>
         </div>
@@ -244,7 +244,7 @@
                             );
                         } else {
                             return (
-                                '<a href="https://drive.google.com/file/d/' + row.id_gdrive_sk + '/view"  target="_blank" class="btn btn-info btn-sm">Link</a>'
+                                '<a href="https://drive.google.com/file/d/' + row.id_gdrive_sk + '/view"  target="_blank" class="btn btn-info btn-sm bg-gradient-success waves-effect waves-light">Link</a>'
                             );
                         }
 
