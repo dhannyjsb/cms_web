@@ -47,7 +47,7 @@
 <?php } ?>
 <?php if (current_url() == base_url() . "/admin/settings/year") { ?>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/js/scripts/pages/app-settings_table.js"></script>
@@ -57,7 +57,7 @@
 <?php } ?>
 <?php if (current_url() == base_url() . "/admin/tu/surat_keluar" or current_url() == base_url() . "/guru/tu/surat_keluar" or current_url() == base_url() . "/tata-usaha/tu/surat_keluar") { ?>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/js/scripts/pages/app-surat_keluar.js"></script>
@@ -74,7 +74,7 @@
 <?php } ?>
 <?php if (current_url() == base_url() . "/admin/siswa" or current_url() == base_url() . "/guru/siswa" or current_url() == base_url() . "/tata-usaha/siswa") { ?>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/js/scripts/pages/app-table.js"></script>
@@ -90,7 +90,7 @@
 
 <?php if (current_url() == base_url() . "/admin/guru" or current_url() == base_url() . "/guru/guru" or current_url() == base_url() . "/tata-usaha/guru") { ?>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/responsive.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/js/scripts/pages/app-guru.js"></script>
