@@ -39,9 +39,13 @@
         <input type="hidden" class="form-control" name="pengedit_surat_keluar" placeholder="PERIHAL SURAT" value="<?= esc($user_info['id_unik']); ?>">
 
     </div>
-    <div class="form-group">
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/<?= esc($data_surat['id_gdrive_sk']); ?>/view" target="_blank">Lihat File</a>
-    </div>
+
+    <?php if ($data_surat['id_gdrive_sk'] == "-") { ?>
+    <?php } else { ?>
+        <div class="form-group" style="text-align: center;">
+            <a class="btn gradient-light-primary text-white waves-effect waves-light" href="https://drive.google.com/file/d/<?= esc($data_surat['id_gdrive_sk']); ?>/view" target="_blank">Lihat File</a>
+        </div>
+    <?php } ?>
     <div class="form-group">
         <label for="basicInputFile" style="text-align: center;display: block;">LAMPIRKAN FILE ?</label>
 
