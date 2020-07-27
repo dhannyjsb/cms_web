@@ -373,8 +373,9 @@
                 success: function(result) {
                     $('#tombol_tambah').prop('disabled', false);
                     $('#tombol_batal').prop('disabled', false);
-
                     if (result == 1) {
+                        $('#tombol_tambah').prop('disabled', false);
+                        $('#tombol_batal').prop('disabled', false);
                         Swal.fire({
                             position: "top-end",
                             type: "error",
@@ -383,6 +384,7 @@
                             timer: 1500,
                             confirmButtonClass: "btn btn-primary",
                             buttonsStyling: false,
+
                         });
                     } else {
                         $('#tombol_tambah').prop('disabled', false);
@@ -404,6 +406,8 @@
                 },
                 error: function(result) {
                     alert("error");
+                    $('#tombol_tambah').prop('disabled', false);
+                    $('#tombol_batal').prop('disabled', false);
                 },
             });
         });
