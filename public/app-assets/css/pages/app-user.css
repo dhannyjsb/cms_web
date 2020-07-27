@@ -62,9 +62,10 @@
 .page-users-edit .users-avatar-shadow {
   box-shadow: 2px 4px 14px 0 rgba(34, 41, 47, 0.4);
 }
-
-.surat_center {
-  text-align: center;
+@media (min-width: 1281px) {
+  .surat_center {
+    text-align: center;
+  }
 }
 
 table.dataTable thead > tr > th.sorting_asc,

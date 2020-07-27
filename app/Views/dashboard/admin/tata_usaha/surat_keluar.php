@@ -296,7 +296,7 @@
             ],
             columnDefs: [{
                 className: "surat_center",
-                targets: [0, 1, 2, 5, 7]
+                targets: [0, 1, 2, 5, 6, 8]
             }],
         });
 
