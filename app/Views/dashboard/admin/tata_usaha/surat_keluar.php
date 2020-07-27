@@ -264,7 +264,7 @@
                                 '" id="ajax-request">Hapus</button>'
                             );
                         } else {
-                            if (row.pembuat_surat_keluar == <?= $user_info['id_unik']; ?>) {
+                            if (row.pembuat_surat_keluar == "<?= $user_info['id_unik']; ?>") {
                                 return (
                                     '<button class="btn btn-info btn-sm editRecord" onclick="modal_edit_surat_keluar(' +
                                     row.surat_keluar_id +
