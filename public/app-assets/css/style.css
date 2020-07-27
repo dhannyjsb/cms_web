@@ -1,0 +1,96 @@
+@media only screen and (max-width: 320px) {
+  .foto_upload {
+    height: 150px;
+    width: 150px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+  .foto_upload {
+    height: 150px;
+    width: 150px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 667px) {
+  .foto_upload {
+    height: 200px;
+    width: 200px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-resolution: 2dppx) and (min-width: 380px) and (max-width: 680px) {
+  .foto_upload {
+    height: 270px;
+    width: 270px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 270px;
+    height: 270px;
+  }
+}
+@media only screen and (min-resolution: 2dppx) and (min-width: 680px) {
+  .foto_upload {
+    height: 270px;
+    width: 270px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 270px;
+    height: 270px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .foto_upload {
+    height: 120px;
+    width: 120px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 120px;
+    height: 120px;
+  }
+  .card-title {
+    min-width: 120px;
+    height: 120px;
+  }
+  .card-body {
+    min-width: 120px;
+  }
+  .btn_upload_foto {
+    min-width: 120px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .foto_upload {
+    height: 300px;
+    width: 300px;
+    border: 1px;
+    border-style: solid;
+  }
+  .img_upload {
+    min-width: 300px;
+    height: 300px;
+  }
+}
