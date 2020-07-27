@@ -22,14 +22,14 @@ class SuratKeluar extends GuruBaseController
                 $client = new Google_Client();
                 putenv('GOOGLE_APPLICATION_CREDENTIALS=' . ROOTPATH . '/smaba-drive.json');
                 $client->useApplicationDefaultCredentials();
-                $user_to_impersonate = 'guru@sman1barambai.sch.id';
+                $user_to_impersonate = 'berkas@sman1barambai.sch.id';
                 $client->setSubject($user_to_impersonate);
                 $client->addScope(Google_Service_Drive::DRIVE);
                 $service = new Google_Service_Drive($client);
                 if ($this->request->getPost('pakai_file') == 1) {
                     $file = new Google_Service_Drive_DriveFile(array(
                         'name' => 'SK-' . $this->request->getPost('no_surat'),
-                        'parents' => array('1-s48qCpk_rAcEUdYwhzTIR-9sTa6kHss') // this is the folder id
+                        'parents' => array('1-CDb1lezrArdekM7WGpzovxD2__t1Cdg') // this is the folder id
                     ));
                     $result = $service->files->create(
                         $file,
@@ -110,14 +110,14 @@ class SuratKeluar extends GuruBaseController
                 $client = new Google_Client();
                 putenv('GOOGLE_APPLICATION_CREDENTIALS=' . ROOTPATH . '/smaba-drive.json');
                 $client->useApplicationDefaultCredentials();
-                $user_to_impersonate = 'guru@sman1barambai.sch.id';
+                $user_to_impersonate = 'berkas@sman1barambai.sch.id';
                 $client->setSubject($user_to_impersonate);
                 $client->addScope(Google_Service_Drive::DRIVE);
                 $service = new Google_Service_Drive($client);
                 if ($this->request->getPost('pakai_file') == 1) {
                     $file = new Google_Service_Drive_DriveFile(array(
                         'name' => 'SK-' . $this->request->getPost('no_surat'),
-                        'parents' => array('1-s48qCpk_rAcEUdYwhzTIR-9sTa6kHss') // this is the folder id
+                        'parents' => array('1-CDb1lezrArdekM7WGpzovxD2__t1Cdg') // this is the folder id
                     ));
                     $result = $service->files->create(
                         $file,
