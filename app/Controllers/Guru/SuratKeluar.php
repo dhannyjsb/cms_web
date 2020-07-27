@@ -20,7 +20,7 @@ class SuratKeluar extends GuruBaseController
             } else {
 
                 $client = new Google_Client();
-                putenv('GOOGLE_APPLICATION_CREDENTIALS=' . ROOTPATH . '/smaba-drive-37fb65fe2b77.json');
+                putenv('GOOGLE_APPLICATION_CREDENTIALS=' . ROOTPATH . '/smaba-drive.json');
                 $client->useApplicationDefaultCredentials();
                 $user_to_impersonate = 'guru@sman1barambai.sch.id';
                 $client->setSubject($user_to_impersonate);
