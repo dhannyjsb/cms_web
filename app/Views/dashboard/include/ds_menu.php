@@ -46,6 +46,14 @@
                         <li class="<?= (current_url() == base_url() . "/admin/tu/surat_keluar" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/admin/tu/surat_keluar"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keluar</span></a>
                         </li>
                     </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/admin/tu/surat_keputusan" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/admin/tu/surat_keputusan"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keputusan</span></a>
+                        </li>
+                    </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/admin/tu/surat_extra" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/admin/tu/surat_extra"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Eskul</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class=" navigation-header"><span>Pengaturan</span>
                 </li>
@@ -89,6 +97,14 @@
                         <li class="<?= (current_url() == base_url() . "/guru/tu/surat_keluar" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/guru/tu/surat_keluar"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keluar</span></a>
                         </li>
                     </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/guru/tu/surat_keputusan" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/guru/tu/surat_keputusan"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keputusan</span></a>
+                        </li>
+                    </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/guru/tu/surat_extra" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/guru/tu/surat_extra"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Eskul</span></a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>
@@ -130,6 +146,14 @@
                 <li class="nav-item has-sub"><a href="#"><i class="feather icon-file-text"></i><span class="menu-title" data-i18n="Icons">Surat</span></a>
                     <ul class="menu-content">
                         <li class="<?= (current_url() == base_url() . "/tata-usaha/tu/surat_keluar" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/tata-usaha/tu/surat_keluar"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keluar</span></a>
+                        </li>
+                    </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/tata-usaha/tu/surat_keputusan" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/tata-usaha/tu/surat_keputusan"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Keputusan</span></a>
+                        </li>
+                    </ul>
+                    <ul class="menu-content">
+                        <li class="<?= (current_url() == base_url() . "/tata-usaha/tu/surat_extra" ? 'active' : ''); ?> nav-item"><a href="<?php echo base_url(); ?>/tata-usaha/tu/surat_extra"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Surat Eskul</span></a>
                         </li>
                     </ul>
                 </li>

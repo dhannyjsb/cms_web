@@ -75,7 +75,17 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/app-assets/css/plugins/extensions/drag-and-drop.css">
 
     <?php } ?>
-    <?php if (current_url() == base_url() . "/admin/tu/surat_keluar" or current_url() == base_url() . "/guru/tu/surat_keluar" or current_url() == base_url() . "/tata-usaha/tu/surat_keluar") { ?>
+    <?php if (
+        current_url() == base_url() . "/admin/tu/surat_keluar"
+        or current_url() == base_url() . "/guru/tu/surat_keluar"
+        or current_url() == base_url() . "/tata-usaha/tu/surat_keluar"
+        or current_url() == base_url() . "/admin/tu/surat_keputusan"
+        or current_url() == base_url() . "/guru/tu/surat_keputusan"
+        or current_url() == base_url() . "/tata-usaha/tu/surat_keputusan"
+        or current_url() == base_url() . "/admin/tu/surat_extra"
+        or current_url() == base_url() . "/guru/tu/surat_extra"
+        or current_url() == base_url() . "/tata-usaha/tu/surat_extra"
+    ) { ?>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/app-assets/css/pages/app-user.css">

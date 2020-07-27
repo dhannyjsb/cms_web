@@ -55,7 +55,17 @@
     <script src="<?php echo base_url(); ?>/app-assets/js/scripts/forms/select/form-select2.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <?php } ?>
-<?php if (current_url() == base_url() . "/admin/tu/surat_keluar" or current_url() == base_url() . "/guru/tu/surat_keluar" or current_url() == base_url() . "/tata-usaha/tu/surat_keluar") { ?>
+<?php if (
+    current_url() == base_url() . "/admin/tu/surat_keluar"
+    or current_url() == base_url() . "/guru/tu/surat_keluar"
+    or current_url() == base_url() . "/tata-usaha/tu/surat_keluar"
+    or current_url() == base_url() . "/admin/tu/surat_keputusan"
+    or current_url() == base_url() . "/guru/tu/surat_keputusan"
+    or current_url() == base_url() . "/tata-usaha/tu/surat_keputusan"
+    or current_url() == base_url() . "/admin/tu/surat_extra"
+    or current_url() == base_url() . "/guru/tu/surat_extra"
+    or current_url() == base_url() . "/tata-usaha/tu/surat_extra"
+) { ?>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="<?php echo base_url(); ?>/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>

@@ -89,7 +89,19 @@ $routes->group('admin', ['filter' => 'admin_auth'], function ($routes) {
 	$routes->post('tu/edit_surat_keluar', 'Admin\SuratKeluar::edit_surat_keluar');
 	$routes->post('tu/simpan_edit_surat_keluar', 'Admin\SuratKeluar::simpan_edit_surat_keluar');
 
-	$routes->add('test', 'Admin\Tesssssst::index'); //test ajha
+	$routes->get('tu/surat_keputusan', 'Admin\SuratKeputusan::Index');
+	$routes->post('tu/surat_keputusan', 'Admin\SuratKeputusan::Index');
+	$routes->get('tu/get_surat_keputusan', 'Admin\SuratKeputusan::get_surat_keputusan');
+	$routes->post('tu/hapus_surat_keputusan', 'Admin\SuratKeputusan::hapus_surat_keputusan');
+	$routes->post('tu/edit_surat_keputusan', 'Admin\SuratKeputusan::edit_surat_keputusan');
+	$routes->post('tu/simpan_edit_surat_keputusan', 'Admin\SuratKeputusan::simpan_edit_surat_keputusan');
+
+	$routes->get('tu/surat_extra', 'Admin\SuratExtra::Index');
+	$routes->post('tu/surat_extra', 'Admin\SuratExtra::Index');
+	$routes->get('tu/get_surat_extra', 'Admin\SuratExtra::get_surat_extra');
+	$routes->post('tu/hapus_surat_extra', 'Admin\SuratExtra::hapus_surat_extra');
+	$routes->post('tu/edit_surat_extra', 'Admin\SuratExtra::edit_surat_extra');
+	$routes->post('tu/simpan_edit_surat_extra', 'Admin\SuratExtra::simpan_edit_surat_extra');
 });
 
 $routes->group('guru', ['filter' => 'admin_auth'], function ($routes) {
@@ -114,6 +126,21 @@ $routes->group('guru', ['filter' => 'admin_auth'], function ($routes) {
 	$routes->post('tu/hapus_surat_keluar', 'Guru\SuratKeluar::hapus_surat_keluar');
 	$routes->post('tu/edit_surat_keluar', 'Guru\SuratKeluar::edit_surat_keluar');
 	$routes->post('tu/simpan_edit_surat_keluar', 'Guru\SuratKeluar::simpan_edit_surat_keluar');
+
+	$routes->get('tu/surat_keputusan', 'Guru\SuratKeputusan::Index');
+	$routes->post('tu/surat_keputusan', 'Guru\SuratKeputusan::Index');
+	$routes->get('tu/get_surat_keputusan', 'Guru\SuratKeputusan::get_surat_keputusan');
+	$routes->post('tu/hapus_surat_keputusan', 'Guru\SuratKeputusan::hapus_surat_keputusan');
+	$routes->post('tu/edit_surat_keputusan', 'Guru\SuratKeputusan::edit_surat_keputusan');
+	$routes->post('tu/simpan_edit_surat_keputusan', 'Guru\SuratKeputusan::simpan_edit_surat_keputusan');
+
+
+	$routes->get('tu/surat_extra', 'Guru\SuratExtra::Index');
+	$routes->post('tu/surat_extra', 'Guru\SuratExtra::Index');
+	$routes->get('tu/get_surat_extra', 'Guru\SuratExtra::get_surat_extra');
+	$routes->post('tu/hapus_surat_extra', 'Guru\SuratExtra::hapus_surat_extra');
+	$routes->post('tu/edit_surat_extra', 'Guru\SuratExtra::edit_surat_extra');
+	$routes->post('tu/simpan_edit_surat_extra', 'Guru\SuratExtra::simpan_edit_surat_extra');
 });
 
 /**

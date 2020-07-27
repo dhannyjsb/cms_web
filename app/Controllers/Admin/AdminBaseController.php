@@ -27,6 +27,8 @@ use App\Models\UserAdminModel;
 use App\Models\GuruModel;
 use App\Models\SettingsMenuModel;
 use App\Models\SuratKeluarModel;
+use App\Models\SuratKeputusanModel;
+use App\Models\SuratExtraModel;
 
 
 
@@ -63,6 +65,8 @@ class AdminBaseController extends Controller
 		$this->GuruModel =  new GuruModel();
 		$this->SettingsMenuModel =  new SettingsMenuModel();
 		$this->SuratKeluarModel =  new SuratKeluarModel();
+		$this->SuratKeputusanModel =  new SuratKeputusanModel();
+		$this->SuratExtraModel =  new SuratExtraModel();
 
 		//$this->admin_model =  new Admin_model();
 		//$this->siswa_model =  new Siswa_model();
