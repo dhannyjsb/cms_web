@@ -45,7 +45,7 @@
                                         <th style="width:3%;vertical-align: middle;">KODE</th>
                                         <th style="width:3%;vertical-align: middle;">NO BERKAS</th>
                                         <th style="width:28%;vertical-align: middle;">PERIHAL</th>
-                                        <th style="width:20%;vertical-align: middle;">ALAMAT TUJUAN</th>
+                                        <th style="width:20%;vertical-align: middle;">TUJUAN</th>
                                         <th style="width:8%;vertical-align: middle;">TANGGAL</th>
                                         <th style="width:8%;vertical-align: middle;">FILE</th>
                                         <th style="width:10%;vertical-align: middle;">AUTHOR</th>
