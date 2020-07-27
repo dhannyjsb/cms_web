@@ -47,8 +47,7 @@
                                         <th style="width:28%;vertical-align: middle;">PERIHAL</th>
                                         <th style="width:20%;vertical-align: middle;">ALAMAT TUJUAN</th>
                                         <th style="width:8%;vertical-align: middle;">TANGGAL</th>
-                                        <th style="width:8%;vertical-align: middle;">LINK</th>
-
+                                        <th style="width:8%;vertical-align: middle;">FILE</th>
                                         <th style="width:10%;vertical-align: middle;">AUTHOR</th>
                                         <th style="width:15%;vertical-align: middle;">ACT</th>
                                     </tr>
@@ -239,9 +238,16 @@
                 {
                     orderable: false,
                     data: function(row, type, set) {
-                        return (
-                            '<a href="https://drive.google.com/file/d/' + row.id_gdrive_sk + '/view"  target="_blank" class="btn btn-info btn-sm">Link</a>'
-                        );
+                        if (row.id_gdrive_sk == "-") {
+                            return (
+                                'Tidak ada File'
+                            );
+                        } else {
+                            return (
+                                '<a href="https://drive.google.com/file/d/' + row.id_gdrive_sk + '/view"  target="_blank" class="btn btn-info btn-sm">Link</a>'
+                            );
+                        }
+
                     },
                 },
                 {
