@@ -14,8 +14,9 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <title><?= esc($settings['nama_sekolah']); ?></title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="D'mamam">
+    <meta name="description" content="Website resmi SMAN 1 Barambai, segala informasi dan pengumuman akan diposting di website ini.">
+    <meta name="keywords" content="smaba, sman 1 barambai, sma barambai, sman barambai">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
