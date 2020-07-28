@@ -154,7 +154,7 @@
                                             <?php if (!$session->has('is_login')) { ?>
                                                 <h3 id="reply-title" class="comment-reply-title">Tuliskan Komentar</h3>
                                                 <p class="must-log-in">
-                                                    Anda harus <a href="#">logged in</a> untuk menuliskan komentar.
+                                                    Anda harus <a href="#" onclick="toggleModal()">logged in</a> untuk menuliskan komentar.
                                                 </p>
                                             <?php } else { ?>
                                                 <h3 id="reply-title" class="comment-reply-title">Tuliskan Komentar</h3>
@@ -196,7 +196,7 @@
                                             <?php if (!$session->has('is_login')) { ?>
                                                 <h3 id="reply-title" class="comment-reply-title">Tuliskan Komentar</h3>
                                                 <p class="must-log-in">
-                                                    Anda bisa <a href="#">logged in</a>.
+                                                    Anda bisa <a href="#" onclick="toggleModal()">logged in</a>.
                                                 </p>
                                                 <div class="column_attr ">
                                                     <div id="contactWrapper">

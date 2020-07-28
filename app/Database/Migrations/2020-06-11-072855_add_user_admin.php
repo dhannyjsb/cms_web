@@ -80,7 +80,7 @@ class AddUserAdmin extends Migration
 			],
 			'last_login' => [
 				'type'           => 'VARCHAR',
-				'constraint'     => '10',
+				'constraint'     => '255',
 			],
 			'is_active' => [
 				'type'           => 'INT',
@@ -92,15 +92,15 @@ class AddUserAdmin extends Migration
 			],
 			'token' => [
 				'type'           => 'VARCHAR',
-				'constraint'     => '10',
+				'constraint'     => '255',
 			],
 			'password_reset_code' => [
 				'type'           => 'VARCHAR',
-				'constraint'     => '10',
+				'constraint'     => '255',
 			],
 			'last_ip' => [
 				'type'           => 'VARCHAR',
-				'constraint'     => '10',
+				'constraint'     => '255',
 			],
 			'created_at' => [
 				'type'           => 'datetime',

@@ -37,6 +37,8 @@ $routes->get('/', 'Front\Home::index');
 $routes->get('//', 'Front\Home::index');
 $routes->get('login', 'Auth::index', ['filter' => 'cek_status']);
 $routes->post('auth/login', 'Auth::login');
+$routes->get('auth/login', 'Auth::login');
+
 $routes->add('logout', 'Auth::logout');
 $routes->get('init', 'Auth::first_init_system');
 

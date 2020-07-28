@@ -1505,6 +1505,25 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
   margin-right: 10px;
 }
 
+#Top_bar.is-sticky a#akun_button {
+  position: relative;
+  top: 24px;
+  display: block;
+  float: left;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+#Top_bar.is-sticky a#login_button {
+  position: relative;
+  top: 24px;
+  display: block;
+  float: left;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
 #Top_bar a#login_button {
   position: relative;
   top: 34px;
@@ -1514,6 +1533,8 @@ body.minimalist-header.header-below:not(.template-slider) #Header {
   line-height: 20px;
   margin-right: 10px;
 }
+
+
 #Top_bar a.button.action_button {
   top: 23px;
   margin: 0 10px 0 0;
