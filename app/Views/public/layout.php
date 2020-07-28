@@ -6,6 +6,8 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
+<?php $session = \Config\Services::session(); ?>
+<?php $request = \Config\Services::request(); ?>
 
 <head>
 
@@ -61,8 +63,60 @@ if ($request->uri->getSegment(1) == 'blogs' or $request->uri->getSegment(1) == '
     <?php include('include/footer.php'); ?>
     <!-- Footer-->
 </div>
+
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="toggleModal()" style="margin-bottom: 15px;">&times;</span>
+        <div>
+            <?php echo form_open(base_url('auth/login'), 'class="login-form" '); ?>
+            <fieldset>
+                <label>&nbsp;&nbsp;Username</label>
+                <input type="text" class="wpcf7-form-control wpcf7-text" id="user-name" name="username" placeholder="Username" required>
+            </fieldset>
+            <fieldset>
+                <label>&nbsp;&nbsp;Password</label>
+                <input type="password" class="wpcf7-form-control wpcf7-text" id="user-password" name="password" placeholder="Password" required>
+
+            </fieldset>
+            <Fieldset>
+                <label>&nbsp;&nbsp;Status</label>
+                <select name="mode_akun" class="wpcf7-form-control wpcf7-text" data-placeholder="Pilih akun">
+                    <option value="1" data-icon="fa fa-wordpress" selected>Admin</option>
+                    <option value="2" data-icon="fa fa-codepen">Guru</option>
+                    <option value="3" data-icon="fa fa-drupal">TU</option>
+                    <option value="4" data-icon="fa fa-css3">Siswa</option>
+                    <option value="5" data-icon="fa fa-html5">Alumni</option>
+                    <option value="6" data-icon="fa fa-html5">Umum</option>
+                </select>
+            </Fieldset>
+
+            <button type="submit" class="btn btn-primary float-right btn-inline">Login</button>
+            <?php echo form_close(); ?>
+        </div>
+
+    </div>
+</div>
 <!-- #Wrapper -->
 <!-- JS -->
+
+<script>
+    var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger_login");
+    var trigger2 = document.querySelector(".trigger_login2");
+
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+    window.addEventListener("click", windowOnClick);
+</script>
 <script src="<?= base_url(); ?>/front_css/js/jquery-2.1.4.min.js"></script>
 
 <script src="<?= base_url(); ?>/front_css/js/mfn.menu.js"></script>

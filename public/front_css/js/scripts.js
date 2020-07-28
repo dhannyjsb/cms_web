@@ -1216,16 +1216,11 @@
 
     /* ---------------------------------------------------------------------------
      * Header Search
-     * --------------------------------------------------------------------------- */
-    jQuery("#search_button, #Top_bar .icon_close").click(function (e) {
+     * --------------------------------------------------------------------------- 
+    jQuery("#akun_button, #Top_bar .icon_close").click(function (e) {
       e.preventDefault();
       jQuery("#Top_bar .search_wrapper").fadeToggle();
-    });
-    jQuery("#login_button, #Top_bar .icon_close").click(function (e) {
-      e.preventDefault();
-      /* jQuery('#Top_bar .search_wrapper').fadeToggle(); */
-      alert("Login");
-    });
+    }); */
 
     /* ---------------------------------------------------------------------------
      * Alert

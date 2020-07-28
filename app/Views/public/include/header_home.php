@@ -60,7 +60,13 @@
                                         <ul id="menu-main-menu" class="menu">
                                             <?php get_menu('1'); ?>
                                         </ul>
-                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                                    </nav>
+                                    <a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                                    <?php if ($session->get('is_login') == 1) { ?>
+                                        <a class="login_button_cuy" href="<?= base_url(); ?>/akun"><i class="icon-user"></i></a>
+                                    <?php } else { ?>
+                                        <a class="login_button_cuy trigger_login2" onclick="toggleModal()" href="#"><i class="icon-login"></i></a>
+                                    <?php } ?>
                                 </div>
 
                                 <!-- Secondary menu area - only for certain pages -->
@@ -86,7 +92,11 @@
                             <div class="top_bar_right">
                                 <div class="top_bar_right_wrapper">
                                     <!-- <a id="search_button" href="#"><i class="icon-search"></i></a>-->
-                                    <a id="search_button" href="#"><i class="icon-search"></i>Login</a>
+                                    <?php if ($session->get('is_login') == 1) { ?>
+                                        <a id="akun_button" href="<?= base_url(); ?>/akun"><i class="icon-user"></i>Akun</a>
+                                    <?php } else { ?>
+                                        <a id="login_button" class="trigger_login" onclick="toggleModal()" href="#"><i class="icon-login"></i>Login</a>
+                                    <?php } ?>
                                 </div>
                                 <div id="popup_contact">
                                     <a class="button button_js" href="#"><i class="icon-mail-line"></i></a>
