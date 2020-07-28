@@ -48,4 +48,11 @@ class Auth_model extends Model
         $builder->update($data);
         return true;
     }
+    public function save_waktu_siswa($data, $id)
+    {
+        $builder = $this->db->table('user_siswa');
+        $builder->where('user_id', $id);
+        $builder->update($data);
+        return true;
+    }
 }
