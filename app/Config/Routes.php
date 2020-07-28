@@ -40,7 +40,8 @@ $routes->post('auth/login', 'Auth::login');
 $routes->add('logout', 'Auth::logout');
 $routes->get('init', 'Auth::first_init_system');
 
-$routes->get('kenaikankelas', 'Front\Kenaikankelas::index');
+
+$routes->get('akun', 'Akun::index');
 
 $routes->get('blogs', 'Front\Blogs::index');
 $routes->get('blogs/read/(:any)', 'Front\Blogs::post/$1');
