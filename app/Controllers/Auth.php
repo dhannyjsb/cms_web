@@ -93,7 +93,7 @@ class Auth extends BaseController
 							);
 							$model->save_waktu($data, $result['admin_id']);
 							$this->session->set($admin_data);
-							return redirect()->to(base_url('guru'));
+							return redirect()->back();
 						} else {
 							$this->session->setFlashdata('login_error', 'User name atau password salah.');
 							return redirect()->to(base_url('login'));
@@ -124,7 +124,7 @@ class Auth extends BaseController
 							);
 							$model->save_waktu($data, $result['admin_id']);
 							$this->session->set($admin_data);
-							return redirect()->to(base_url('tu'));
+							return redirect()->back();
 						} else {
 							$this->session->setFlashdata('login_error', 'User name atau password salah.');
 							return redirect()->to(base_url('login'));
@@ -155,7 +155,7 @@ class Auth extends BaseController
 							);
 							$model->save_waktu($data, $result['user_id']);
 							$this->session->set($admin_data);
-							return redirect()->to(base_url('siswa'));
+							return redirect()->back();
 						}
 					} else {
 						$this->session->setFlashdata('login_error', 'User name atau password salah.');
