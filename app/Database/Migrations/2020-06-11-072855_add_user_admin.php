@@ -117,6 +117,9 @@ class AddUserAdmin extends Migration
 		$data_admin = [
 			'username' => 'admin',
 			'nama_lengkap' => 'Super Admin',
+			'id_unik' => '8IIn6II7',
+			'email' => 'admin@mail.com',
+			'mobile_no' => '080989999',
 			'user_role_id' => '1',
 			'is_active' => '1',
 			'image' => 'default.jpg',

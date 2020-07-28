@@ -164,7 +164,7 @@
                                                         <!-- One Third (1/3) Column -->
                                                         <div class="column one-third">
                                                             <label>Name:</label><span>
-                                                                <input type="text" name="name_komentar" id="name_komentar" size="40" aria-required="true" aria-invalid="false">
+                                                                <input type="text" name="name_komentar" id="name_komentar" size="40" aria-required="true" aria-invalid="false" value="<?= $data_user['nama_lengkap']; ?>" readonly>
                                                                 <input type="hidden" name="comment_post_id" value="<?= $post['post_id']; ?>">
                                                                 <input type="hidden" name="comment_parrent_id" value="0">
                                                             </span>
@@ -172,21 +172,17 @@
                                                         <!-- One Third (1/3) Column -->
                                                         <div class="column one-third">
                                                             <label>E-mail address:</label><span>
-                                                                <input type="email" name="email_komentar" id="email_komentar" size="40" aria-required="true" aria-invalid="false">
+                                                                <input type="email" name="email_komentar" id="email_komentar" size="40" aria-required="true" aria-invalid="false" value="<?= $data_user['email']; ?>" readonly>
                                                             </span>
                                                         </div>
                                                         <!-- One Third (1/3) Column -->
                                                         <div class="column one-third">
                                                             <label>Status:</label><span>
-                                                                <input type="text" name="kelas_komentar" id="kelas_komentar" size="40" aria-invalid="false" value="<?php if ($session->has('is_admin_login')) {
-                                                                                                                                                                        echo "Admin";
-                                                                                                                                                                    } else {
-                                                                                                                                                                        echo "Siswa";
-                                                                                                                                                                    } ?>" readonly>
+                                                                <input type="text" name="kelas_komentar" id="kelas_komentar" size="40" aria-invalid="false" value="<?= $data_user['nama_role']; ?>" readonly>
                                                             </span>
                                                         </div>
                                                         <div class="column one">
-                                                            <label>Message:</label><span> <textarea name="isi_komentar" id="isi_komentar" class="flv_style_38" rows="10" aria-invalid="false"></textarea></span>
+                                                            <label>Message:</label><span> <textarea name="isi_komentar" id="isi_komentar" class="flv_style_38" rows="10" required required="required"></textarea></span>
                                                         </div>
                                                         <div class="column one">
                                                             <input type="submit" value="Kirim Komentar" id="submit" ;">

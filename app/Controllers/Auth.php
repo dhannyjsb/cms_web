@@ -54,6 +54,7 @@ class Auth extends BaseController
 						);
 						$data = array(
 							'last_login' => $waktu_login,
+							'last_ip' => $this->request->getIPAddress()
 						);
 						$model->save_waktu($data, $result['admin_id']);
 						$this->session->set($admin_data);
@@ -84,6 +85,7 @@ class Auth extends BaseController
 						);
 						$data = array(
 							'last_login' => $waktu_login,
+							'last_ip' => $this->request->getIPAddress()
 						);
 						$model->save_waktu($data, $result['admin_id']);
 						$this->session->set($admin_data);
@@ -114,6 +116,7 @@ class Auth extends BaseController
 						);
 						$data = array(
 							'last_login' => $waktu_login,
+							'last_ip' => $this->request->getIPAddress()
 						);
 						$model->save_waktu($data, $result['admin_id']);
 						$this->session->set($admin_data);
@@ -144,6 +147,7 @@ class Auth extends BaseController
 						);
 						$data = array(
 							'last_login' => $waktu_login,
+							'last_ip' => $this->request->getIPAddress()
 						);
 						$model->save_waktu($data, $result['user_id']);
 						$this->session->set($admin_data);

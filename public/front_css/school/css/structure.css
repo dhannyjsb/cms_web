@@ -6274,7 +6274,7 @@ body {
   #Header a.login_button_cuy {
     position: absolute !important;
     top: 25px !important;
-    right: -25px !important;
+    right: -30px !important;
     z-index: 10;
     margin: 0;
     display: block;

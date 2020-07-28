@@ -11,6 +11,7 @@ use App\Models\GuruModel;
 use App\Models\BlogsModel;
 use App\Models\BlogsCatagoriesModel;
 use App\Models\BlogsCommentsModel;
+use App\Models\FrontModel;
 
 
 /**
@@ -65,10 +66,10 @@ class FrontController extends Controller
         $this->BlogsModel =  new BlogsModel();
         $this->BlogsCatagoriesModel =  new BlogsCatagoriesModel();
         $this->BlogsCommentsModel  =  new BlogsCommentsModel();
-
-
+        $this->FrontModel  =  new FrontModel();
 
         $session = \Config\Services::session();
+        $this->username = $session->get('username');
 
         //$this->tahun_aktif = $this->get_tahun_aktif['tahun_pelajaran'];
         if ($this->db_check->tableExists('general_tahun_pelajaran')) {

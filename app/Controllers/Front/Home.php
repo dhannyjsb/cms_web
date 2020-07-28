@@ -12,6 +12,11 @@ class Home extends FrontController
         } else {
             return redirect()->to(base_url('login'));
         }
+        if ($this->session->get('is_login') == 1) {
+            $data['data_user'] = $this->FrontModel->get_user_data($this->username);
+        } else {
+            $data['data_user'] = $this->FrontModel->get_user_null();
+        }
         $data['settings'] = $this->SettingsModel->get_settings_id();
         $data['view'] = 'public/home';
 

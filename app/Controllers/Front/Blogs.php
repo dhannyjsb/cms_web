@@ -2,6 +2,8 @@
 
 namespace App\Controllers\Front;
 
+$this->session = \Config\Services::session();
+
 class Blogs extends FrontController
 {
     public function index()
@@ -16,7 +18,11 @@ class Blogs extends FrontController
         $data['cate_list'] = $this->BlogsCatagoriesModel->get_cate_list(); //Categories Index		
         $data['latest_post'] = $this->BlogsModel->latest_post(3);
         $data['top_view'] = $this->BlogsModel->top_post(3);
-
+        if ($this->session->get('is_login') == 1) {
+            $data['data_user'] = $this->FrontModel->get_user_data($this->username);
+        } else {
+            $data['data_user'] = $this->FrontModel->get_user_null();
+        }
         return view('public/layout', $data);
     }
 
@@ -30,7 +36,11 @@ class Blogs extends FrontController
         $data['top_view'] = $this->BlogsModel->top_post(3);
         $post_id_by_slug = $this->BlogsModel->get_single_posts($post_slug);
         $data['data_komentar'] = $this->BlogsCommentsModel->ambil_komentar($post_id_by_slug['post_id']);
-        //dd($data);
+        if ($this->session->get('is_login') == 1) {
+            $data['data_user'] = $this->FrontModel->get_user_data($this->username);
+        } else {
+            $data['data_user'] = $this->FrontModel->get_user_null();
+        }
         if ($this->BlogsModel->get_single_posts($post_slug) == false) {
             $data['view'] = 'public/blogs/blog_not_found';
             return view('public/layout', $data);
