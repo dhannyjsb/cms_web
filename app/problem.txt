@@ -1,1 +1,1 @@
-innodb_log_file_size and innodb_strict_mode on my.ini https://stackoverflow.com/questions/22637733/mysql-error-code-1118-row-size-too-large-8126-changing-some-columns-to-te
+#innodb_log_file_size and innodb_strict_mode on my.ini https://stackoverflow.com/questions/22637733/mysql-error-code-1118-row-size-too-large-8126-changing-some-columns-to-te
